@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-	<title>Graphr - The JavaScript Graphing Calculator</title>
+	<title>图像计算器</title>
 
 	<link rel="stylesheet" type="text/css" href="jsgcalc.css" />
 
@@ -49,7 +49,7 @@
 <div id="toolboxes">
 	<div class="toolbox" id="toolbox_zoombox">
 		<div class="toolbox_header">
-			<div class="toolbox_close"><a href="javascript: void(0)">close</a></div>
+			<div class="toolbox_close"><a href="javascript: void(0)">关闭</a></div>
 			Window Options
 		</div>
 		
@@ -98,7 +98,7 @@
 <div id="sidewrapper">
 	<div id="graph_sidebar">
 		<h1 style="font-family: Lato, Arial, sans-serif; font-style: italic; font-size: 28pt; color: #3d94f6; text-shadow: 1px 1px #FFF ">Graphr</h1>
-		<span style="font-size: 90%; position: relative; bottom: 4px;"><em>The JavaScript Graphing Calculator</em>
+		<span style="font-size: 90%; position: relative; bottom: 4px;"><em>图形计算器</em>
 		</span><br /><br />
 
 		<div id="graph_inputs">
@@ -106,7 +106,7 @@
 		</div>
 		<br />
 		<div id="buttonbar">
-			<a class="fancybutton" href="javascript:void(0)" onclick="jsgui.evaluate()">Evaluate</a>
+			<a class="fancybutton" href="javascript:void(0)" onclick="jsgui.evaluate()">渲染</a>
 			<a class="fancybutton" href="javascript:void(0)" onclick="jsgui.addInput()">+</a>
 			<a class="fancybutton greybutton" href="javascript:void(0)" id="settings_button" onclick="$('#settings').toggle(400)"><img src='images/settings.png' alt='Settings' /></a><br /><br />
 		</div>
@@ -119,23 +119,23 @@
 			</div>
 	
 			<div id="gridlines_select" class="options_list">
-				Gridlines:
-				<a href="javascript:void(0)" onclick="jsgui.setGridlines('normal')" id="gridlines_select_normal" class="option option_selected">NORMAL</a>
-				<a href="javascript:void(0)" onclick="jsgui.setGridlines('less')" id="gridlines_select_less" class="option">LESS</a>
-				<a href="javascript:void(0)" onclick="jsgui.setGridlines('off')" id="gridlines_select_off" class="option">OFF</a>
+				网格线:
+				<a href="javascript:void(0)" onclick="jsgui.setGridlines('normal')" id="gridlines_select_normal" class="option option_selected">正常</a>
+				<a href="javascript:void(0)" onclick="jsgui.setGridlines('less')" id="gridlines_select_less" class="option">稀疏</a>
+				<a href="javascript:void(0)" onclick="jsgui.setGridlines('off')" id="gridlines_select_off" class="option">关闭</a>
 			</div>
 	
 			<div id="quality_select" class="options_list">
-				Precision:
-				<a href="javascript:void(0)" onclick="jsgui.setQuality(0.1)" id="quality_select_01" class="option">LOW</a>
-				<a href="javascript:void(0)" onclick="jsgui.setQuality(0.5)" id="quality_select_05" class="option">MED</a>
-				<a href="javascript:void(0)" onclick="jsgui.setQuality(1)" id="quality_select_1" class="option option_selected">HIGH</a>
-				<a href="javascript:void(0)" onclick="jsgui.setQuality(5)" id="quality_select_5" class="option">ULTRA</a>
+				精度:
+				<a href="javascript:void(0)" onclick="jsgui.setQuality(0.1)" id="quality_select_01" class="option">低</a>
+				<a href="javascript:void(0)" onclick="jsgui.setQuality(0.5)" id="quality_select_05" class="option">中</a>
+				<a href="javascript:void(0)" onclick="jsgui.setQuality(1)" id="quality_select_1" class="option option_selected">高</a>
+				<a href="javascript:void(0)" onclick="jsgui.setQuality(5)" id="quality_select_5" class="option">极高</a>
 			</div>
 		</div>
 		
 		<p>By <a href="http://www.yerich.net">Richard Ye</a> | 
-		<a href="javascript: void(0);" onclick="about()">Disclaimer</a> | <a href="https://github.com/yerich/Graphr">GitHub</a><br />
+		<a href="javascript: void(0);" onclick="about()">Disclaimer</a> | <a href="https://github.com/toolbox-online/Graphr">GitHub</a><br />
 		<span style="color: #999">Development (version 0.4)</span></p>
 		
 	</div>
